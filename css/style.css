@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .clr {
@@ -22,6 +23,7 @@ body {
     font-size: 17px;
     font-weight: 100;
 }
+
 
 .scroll-to-top {
     position: fixed;
@@ -129,6 +131,13 @@ body {
 .landing .btn-landing .btn2 {
     background-color: transparent;
     border-color: white;
+}
+
+.landing .btn-landing .btn1:hover ,
+.landing .btn-landing .btn2:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .landing-area a {
@@ -267,7 +276,7 @@ body {
 
 .blog {
     background-color: #F8F8F8;
-    height: 80vh;
+    height: 90vh;
     padding: 50px 0;
 }
 
@@ -466,29 +475,29 @@ body {
   .container { max-width: 80%; }
 }
 
+
 @media (max-width: 768px) {
-  /* Navbar */
-  .nav-menu,
-  .landing .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  .nav-menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
   }
 
   .nav-menu li {
-    display: block;
+    display: inline-block;
   }
 
   .nav-menu li a {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 5px 8px;
   }
 
   .menu-icon {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 28px;
+    padding: 8px;
   }
 
-  /* Landing */
   .landing h1 { font-size: 40px; }
   .landing p {
     font-size: 16px;
@@ -509,7 +518,6 @@ body {
   .landing-area { padding-top: 70px; }
   .landing .logo img { width: 100px; }
 
-  /* Offer Section */
   .offer .offer-info,
   .offer .offer-img {
     width: 100%;
@@ -530,7 +538,6 @@ body {
     font-size: 28px;
   }
 
-  /* Gallery */
   .gallery-info .item {
     width: 100%;
     padding: 15px 10px;
@@ -555,7 +562,6 @@ body {
     padding: 20px 0;
   }
 
-  /* Blog */
   .blog .blog-info,
   .blog .blog-map {
     width: 100%;
@@ -583,7 +589,6 @@ body {
     margin-bottom: 10px;
   }
 
-  /* Contact */
   .item {
     width: 100%;
     float: none;
@@ -596,7 +601,6 @@ body {
     gap: 20px;
   }
 }
-
 
 @media (max-width: 480px) {
   .landing h1 { font-size: 32px; }
